@@ -31,3 +31,11 @@ toc: true
   }
   ```
 
+# 调试 Emscripten WebAssembly
+
+- 确保编译和链接选项 `-g`。
+
+- 如果是用 CMake 构建的，需要设置 CMake 变量 `CMAKE_BUILD_TYPE` 为 `Debug`。
+
+  > 见：https://stackoverflow.com/questions/72120889/generating-debug-info-with-emscripten-ninja-cmake-on-complex-project
+
